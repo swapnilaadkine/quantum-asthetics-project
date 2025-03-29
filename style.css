@@ -1,0 +1,504 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Section */
+.navbar,  img{
+    width: 80px;
+}
+.headerContent{
+  width: 100%;
+  height: 43rem;
+  background: linear-gradient(rgb(13, 30,75), rgba(30, 30, 0, 0.5), rgba(13, 30, 75)),
+        url(./background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ .collapse{
+  color: aliceblue;
+  margin-left: 23rem;
+}
+.nav-link{
+  margin-left: 6rem;
+}
+.collapse, .navbar-nav, .nav-link{
+  color: aliceblue;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+ .hero-section, p{
+  font-size: 30px;
+  padding-bottom: 0px;
+}
+.hero-section, h1{
+  font-size: 50px;
+  word-spacing: 15px;
+}
+
+/* Animation for Navbar Links */
+
+.navbar-nav li a {
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar-nav li a:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Animation for Search Icon */
+
+.button {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.2);
+}
+
+.button i {
+  transition: color 0.2s ease-in-out;
+}
+
+.button:hover i {
+  color: #fff;
+}
+
+/* Animation for Navbar Collapse */
+
+.collapse {
+  transition: height 0.2s ease-in-out;
+}
+
+/* Animation for Navbar Toggler */
+
+.navbar-toggler {
+  transition: transform 0.2s ease-in-out;
+}
+
+.navbar-toggler:hover {
+  transform: scale(1.1);
+}
+
+.navbar-toggler-icon {
+  transition: transform 0.2s ease-in-out;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+  transform: scale(1.2);
+}
+
+/* Animation for Logo */
+
+.headerSection img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.headerSection:hover img {
+  transform: scale(1.1);
+}
+
+/* Animation for Text */
+
+.headerSection h1 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.headerSection:hover h1 {
+  transform: scale(1.1);
+}
+
+.navbar-nav .nav-link {
+  transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff; 
+  border-bottom: 2px solid #007bff; 
+}
+
+/* Navbar Section */
+
+/* Banner Section */
+
+h2, .lowerHead,  span{
+  color: #F6F5F3;
+  /* font-size: 4rem !important; */
+}
+.hero-section,  h3{
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.btn-lg {
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-lg:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.btn-lg {
+  animation: pulse 2s infinite;
+}
+/* Features Section */
+.features{
+  background-color: #F6F5F3;
+}
+.features, h2{
+  font-weight: 300;
+color: #363231;
+font-size: 50px;
+}
+.col-md-4, p {
+  font-size: 20px;
+  line-height: 35px;
+}
+h1, h2{
+  display: flex;
+  flex-direction: column;
+}
+
+.call-to-action {
+  background-color: #071329;
+  padding-top: 80px;
+}
+.call-to-action, h5,
+.call-to-action, p{
+  display: flex;
+  flex-direction: column-reverse;
+  line-height: 35px;
+}
+
+.call-to-action, .image{
+  display: flex;
+  margin-top: -20%;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+.call-to-action, .image, img{
+  display: flex;
+  width: 100%;
+}
+
+
+/* Fade-In Animation for Image */
+
+.image {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Zoom-In Animation for Image */
+
+.image img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.image img:hover {
+  transform: scale(1.1);
+}
+
+/* Rotate Animation for Image */
+
+.image img {
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Slide-In Animation for Image */
+
+.image {
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Bounce Animation for Image */
+
+.image img {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Flip Animation for Image */
+
+.image img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.image img:hover {
+  transform: rotateY(180deg);
+}
+
+
+
+
+/* Map Section */
+
+.mapLocation, label{
+  font-weight: 300;
+}
+.mapLocation, label{
+  font-size: 25px;
+  display: block;
+}
+.mapLocation, .Locate{
+  color: #363231 !important;
+  font-size: 30px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.MapLocation label:hover, .MapLocation h4:hover {
+  color: #0961bf; 
+font-weight: 400;
+  cursor: pointer;
+}
+
+.MapLocation label {
+  transition: color 0.2s ease-in-out;
+}
+
+.MapLocation h4 {
+  transition: color 0.2s ease-in-out;
+}
+ /* Footer Section */
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  background-color: #F6F5F3;
+}
+.imgFinal{
+  width: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.mini-bar, span{
+  color: #071329;
+  flex-direction: column;
+}
+.wrapper, .mini-bar,
+.wrapper, .mini-bar2{
+  display: flex;
+  font-size: 100px;
+}
+.mini-bar,
+.mini-bar2{
+  display: flex;
+  flex-direction: column;
+}
+ .input{
+  font-size: 20px;
+  width: 90%;
+  margin-left: 24%;
+  border-radius: 10px;
+  border: none;
+}
+.mini-bar span, .mini-bar2 span {
+  transition: color 0.2s ease-in-out;
+}
+
+.mini-bar span:hover, .mini-bar2 span:hover {
+  color: #0961bf; 
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.news-letter:hover {
+  background-color: #f7f7f7; 
+}
+
+.news-letter:hover .email-option {
+  color: #0961bf; 
+}
+
+.news-letter:hover .email-option h4 {
+  color: #0961bf; 
+}
+
+.news-letter:hover .email-option .input {
+  color: #0961bf; 
+}
+.imgFinal:hover h6, .imgFinal:hover span, .message:hover {
+  color: #007bff; 
+}
+
+
+
+
+
+/* @keyframes coding */
+@media screen and (max-width:1400px) {
+ .collapse{
+  margin-left: 10rem;
+ }
+}
+
+@media screen and (max-width:1200px){
+  .collapse{
+    margin-left: 8rem;
+  }
+  .lowerHead{
+    font-size: 10px;
+  }
+   h3{
+    font-size: 10px;
+  }
+  h2{
+   display: inline-flex !important;
+  }
+  .features{
+    margin-top: 40%;
+  }
+}
+
+@media screen and (max-width:992px) {
+
+  .container, .headings{
+   width: auto;
+   margin-left: 40%;
+   margin-top: -20%;
+   font-size: 30px !important;
+  }
+  .btn{
+    font-size: 20px;
+  }
+  .navbar-toggler{
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .call-to-action, .row{
+    width: auto;
+    height: auto;
+  }
+  .image{
+    width: 100%;
+    height: 23rem;
+    margin-top: 15%;
+    margin-left: -20%;
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar-nav, .nav-link{
+    font-size: 20px !important;
+  }
+
+.features, .pack{
+  margin-left: -22%;
+}
+.call-to-action, .pack2{
+  margin-left: -20%;
+}
+.map-section, .pack3{
+  margin-top: 25%;
+  margin-left: -30%;
+}
+
+.imgFinal{
+  padding-top: 30%;
+  margin-left: 10%;
+}
+.footer-details
+{
+margin-left: -20%;
+}
+.MapLocation{
+  margin-top: 20%;
+  margin-left: -5%;
+  word-spacing: 20px;
+}
+.mapLocation, h4{
+  margin-left: 5% !important;
+  color: cadetblue;
+}
+.wrapper, span{
+  margin-left: -30%;
+}
+.wrapper, .mini-bar,
+.wrapper, .mini-bar2{
+  margin-left: -10%;
+}
+
+.email-option, h4{
+  margin-left: -25%;
+}
+.email-option, input{
+  margin-left: -25%;
+  width: 70%;
+}
+}
+@media screen  and (max-width:576){
+  .features{
+    width: auto;
+    height: auto;
+  }
+  .features, h2{
+    padding-top: 20rem !important;
+  }
+  .nav-link{
+    font-size: 20px;
+    margin-top: -10rem;
+  }
+}
+
+
+
+
+
